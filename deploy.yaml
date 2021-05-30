@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: avoxi-restrict-location-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: avoxi-restrict-location
+    spec:
+      containers:
+      - name: avoxi-restrict-location
+        image: avoxi-restrict-location-image:v1
+        ports:
+        - containerPort: 3170

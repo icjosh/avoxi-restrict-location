@@ -1,0 +1,27 @@
+{
+  "name": "avoxi-restrict-location",
+  "version": "1.0.0",
+  "description": "API for location check against whitelist",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "nodemon server.js"
+  },
+  "author": "Josh C",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "maxmind": "^4.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "livereload": "^0.9.3",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.7"
+  }
+}
